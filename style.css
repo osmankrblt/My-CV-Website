@@ -1,5 +1,6 @@
 body {
   background-color: antiquewhite;
+  margin: 0 auto;
 }
 
 .nav {
@@ -13,14 +14,15 @@ li {
   display: inline;
 }
 
-li a {
+.nav li a {
   margin: 5px;
   color: aliceblue;
   font-family: cursive;
 }
 
 #profile {
-  margin: 15px 0px 15px 0px;
+  width: 60%;
+  margin: 15px auto;
   background-color: white;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   padding: 6px;
@@ -43,12 +45,14 @@ img {
 
 #info {
   background-color: white;
+  width: 60%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   padding: 6px;
-  margin: 15px 0px 15px 0px;
+  margin: 15px auto;
   border-radius: 50px;
   display: flex;
   justify-content: space-between;
+  align-self: center;
 }
 
 #info p {
@@ -56,12 +60,12 @@ img {
 }
 
 .jobs {
-  width: 100%;
+  width: 80%;
   display: flex;
+  margin: 0 auto;
 }
 
 .job-container {
-  text-align: start;
   width: 200px;
   height: auto;
   margin: 15px 15px 15px 15px;
@@ -69,6 +73,9 @@ img {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   padding: 20px;
   border-radius: 50px;
+}
+.job-container li {
+  display: list-item;
 }
 
 footer {
