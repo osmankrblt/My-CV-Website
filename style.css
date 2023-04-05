@@ -117,10 +117,12 @@ img {
 }
 
 #projects {
-  background-color: red;
   margin: 30px auto;
   padding: auto;
   width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .project-container {
