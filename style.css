@@ -2,6 +2,10 @@ body {
   background-color: antiquewhite;
 }
 
+hr {
+  color: black;
+}
+
 .nav {
   background-color: rgb(18, 120, 146);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
@@ -58,15 +62,23 @@ img {
   padding: 0px 15px 0px 15px;
 }
 
-.jobs {
-  width: 50%;
+.experiences {
   margin: 0 auto;
+}
+
+.jobs {
+  width: 90%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
 .job-container {
   width: 200px;
   height: auto;
-  margin: 15px;
+  margin: 15px auto;
   background-color: white;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   padding: 20px;
@@ -76,23 +88,21 @@ img {
   display: list-item;
 }
 
-#custom_body {
-  background-color: aqua;
-  border-radius: 5px;
-  border: 5px;
-  padding: 10px;
-  width: 80%;
+.abilities {
   margin: 0 auto;
 }
 
 #abilityboxes {
   background-color: aliceblue;
   text-align: center;
-  width: 70%;
+  width: 90%;
+  height: auto;
   padding: 6px;
   margin: 0 auto;
+  max-width: 90%;
   display: grid;
-  grid-auto-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
