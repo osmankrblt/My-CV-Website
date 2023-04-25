@@ -15,33 +15,57 @@
         <li><a href="projects.html">Projeler</a></li>
       </ul>
     </nav>
+
+    <style>
+      aside {
+        width: 30%;
+
+        height: min-content;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        font-style: italic;
+        background-color: transparent;
+      }
+      article {
+        width: 50%;
+      }
+    </style>
   </head>
+
   <body>
     <div id="profile">
       <img src="static/my_image.png" alt="user" />
       <p id="profileName">Hacı Osman Karabulut</p>
-      <img
-        href="https://www.dpu.edu.tr"
-        src="static/dpü_logo.png"
-        alt="university"
-      />
+      <a href="https://www.dpu.edu.tr"
+        ><img src="static/dpü_logo.png" alt="university"
+      /></a>
     </div>
+    <aside>
+      <label for="fname">Okul numaranız?</label>
+      <input type="text" id="fschoolnumber" name="fschoolnumber" /><br /><br />
 
-    <div id="info">
-      <p id="info-text">
-        Araştırmayı ve yeni bilgiler öğrenmeyi seven birisiyim. Yazılım ile
-        üniversitem başlamadan önce tanıştım. Python ile başlayan bu serüven
-        C,C++ ve Java gibi diller ile devam etti. Kendimi Python ile Görüntü
-        işleme ve Yapay Zeka alanında geliştirmeye başladım. Projelerimi
-        geliştirmek adına Flask öğrendim. Flask ile birlikte tabi ki HTML ve CSS
-        bilgilerine sahip oldum. Docker öğrendikten sonra projelerimi konteyner
-        haline getirip Amazon AWS kullandım. Daha sonra Flutter ile mobil
-        programlamaya giriş yaptım. Flutter ile projeler geliştirirken Firebase
-        kullanımını öğrendim. Projelerimi
-        <a href="https://github.com/osmankrblt" target="_blank">Github</a>
-        adresimden inceleyebilirsiniz.
-      </p>
-    </div>
+      <button id="calculatenumber">Çalıştır</button>
+
+      <h3 id="resultScreen"></h3>
+    </aside>
+    <article>
+      <div id="info">
+        <p id="info-text">
+          Araştırmayı ve yeni bilgiler öğrenmeyi seven birisiyim. Yazılım ile
+          üniversitem başlamadan önce tanıştım. Python ile başlayan bu serüven
+          C,C++ ve Java gibi diller ile devam etti. Kendimi Python ile Görüntü
+          işleme ve Yapay Zeka alanında geliştirmeye başladım. Projelerimi
+          geliştirmek adına Flask öğrendim. Flask ile birlikte tabi ki HTML ve
+          CSS bilgilerine sahip oldum. Docker öğrendikten sonra projelerimi
+          konteyner haline getirip Amazon AWS kullandım. Daha sonra Flutter ile
+          mobil programlamaya giriş yaptım. Flutter ile projeler geliştirirken
+          Firebase kullanımını öğrendim. Projelerimi
+          <a href="https://github.com/osmankrblt" target="_blank">Github</a>
+          adresimden inceleyebilirsiniz.
+        </p>
+      </div>
+    </article>
     <hr />
     <footer>
       <p>Author: Hacı Osman Karabulut</p>
@@ -50,7 +74,23 @@
           >h.osmankarabulut@gmail.com</a
         >
       </p>
+
+      <a href="https://www.facebook.com/Osmn137" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/HOsmanKrblt" class="fa fa-twitter"></a>
+      <a
+        href="https://www.instagram.com/h.osmankarabulut/"
+        class="fa fa-instagram"
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/hosmankarabulut/"
+        class="fa fa-linkedin"
+      ></a>
+      <a href="https://youtube.com/@hosmankarabulut" class="fa fa-youtube"></a>
     </footer>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <script src="scripts.js"></script>
   </body>
